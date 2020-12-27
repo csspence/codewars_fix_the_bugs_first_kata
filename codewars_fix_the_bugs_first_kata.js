@@ -18,10 +18,6 @@ Once you think all the bugs are fixed run the code to see if it works. A correct
 Extension: Once you have fixed all the syntax errors present in the code (basic requirement), you may attempt to optimise the code or try a different approach by coding it from scratch.
 */
 
-func myFirstKata(a b) {
-  if {typeof(a) !! "number" or typeof(b) !! "number"} (
-    false;
-  ) else (
-    a % b ++ b % a;
-  )
+const myFirstKata = (a, b) => {
+  return typeof a === 'number' && typeof b === 'number' ? (a % b) + (b % a) : false;
 }
